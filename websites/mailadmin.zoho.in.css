@@ -1,0 +1,42 @@
+/* mazm-Transparency */
+body,
+.zmannouncement-banner--black-red__gezdbq,
+.zmw-hostingBox.errorBox,
+.zmbackdrop__bxuhvd {
+  background-color: transparent !important;
+}
+
+body, .zmNightMode {
+  --app-bg: transparent !important;
+  --app-lhs-bg: transparent !important;
+  --app-note-bg: transparent !important;
+  --app-grey-10: transparent !important;
+  --app-list-header-bg: transparent !important;
+  --wms-chat-bg-color: transparent !important;
+  
+  --highlight-bg: rgba(255,255,255,0.1) !important;
+} 
+
+/* mazm-Immersive Popup */
+:root {
+  body {
+    --zmdropdown-bg:  var(--highlight-bg) !important;
+    --app-header-logo-bg: var(--highlight-bg) !important;
+  }
+  
+  .zmdrawer__1s0myaj {
+    background-color: var(--highlight-bg) !important;
+  }
+  
+  &:has(#drawer-_r_3_:not(:empty)) {
+    .zmw-main-container, #wmstoolbar {
+      filter: blur(20px) !important;
+    }
+  }
+  
+  &:has(.zmclauncher-overlay, .commandDropDown) {
+    #zmccontentcontainer, #wmstoolbar {
+      filter: blur(20px) !important;
+    }
+  } 
+}
